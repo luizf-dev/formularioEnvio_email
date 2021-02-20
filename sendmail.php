@@ -7,30 +7,17 @@ $email= $_POST['email'];
 $assunto= $_POST['subject'];
 $mensagem= $_POST['comments'];
 
-
-
-//echo "Nome:    ".$nome." <br/>
-     // Email:   ".$email." <br/>
-    //  Assunto: ".$assunto." <br/>
-     // Mensagem: ".$mensagem." <br/>";
-
-//até aqui está funcionando!!
-
-
    
 $to = "facedohorrorgrind@gmail.com";
 $assunto = "$assunto";
-$mensagem =  "nome: ".$nome."\r\n";
+$mensagem = "nome: ".$nome."\r\n";
             "email: ".$email."\r\n";
-          "assunto: ".$assunto."\r\n";
-        "mensagem: ".$mensagem."\r\n";
+            "assunto: ".$assunto."\r\n";
+            "mensagem: ".$mensagem."\r\n"; 
 
-//Até aqui também!!   
-
-
-            $header = "From: $email Reply-To: $email";
-           $header = "Content-type:text/html; charset= utf-8";
-                 ".x=Mailer:PHP/" .phpversion();
+$header = "From: $email Reply-To: $email";
+$header = "Content-type:text/html; charset= utf-8";
+".x=Mailer:PHP/" .phpversion();
 
 
  mail($to,$assunto,$mensagem,$header);           
