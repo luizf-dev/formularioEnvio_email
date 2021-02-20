@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>FORMULÁRIO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    body {
+        background-image: url("../img/foto 2.png");
+    }
+    
+    .container {
+        border: 2px solid black;
+        width: 50%;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+    
+    .row {
+        color: black;
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        background-color: green;
+        color: #f1f1f1;
+        border-radius: 0;
+        transition: .2s;
+        border-radius: 5px;
+    }
+    
+    .btn:hover,
+    .btn:focus {
+        border: 3px solid #333;
+        background-color: red;
+        color: black;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+
+
+
+    <div id="contact" class="container">
+
+        <h3 class="text-center" style="color: black; font-size: 40px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+            <b><span>FORMULÁRIO</span></h3> </b>
+            <p class="text-center"></p><br><br>
+
+            <div class="col-md-9" style="margin-left: 80px;">
+                <form class="form" method="post" action=" sendmail.php">
+                    <div class="row">
+                        <div class="col-sm-6  form-group">
+                            <label>NOME</label><br>
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required="required">
+                        </div>
+                        <div class="col-sm-6  form-group">
+                            <label>EMAIL</label><br>
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required="required">
+                        </div>
+                        <div class="col-sm-12  form-group">
+                            <label>ASSUNTO</label><br>
+                            <textarea class="form-control" id="subject" name="subject" placeholder="Assunto" rows="2"></textarea>
+                        </div><br>
+
+                        <div class="col-sm-12 form-group">
+                            <label>MENSAGEM</label><br>
+                            <textarea class="form-control" id="comments" name="comments" placeholder="Texto" rows="5"></textarea>
+                        </div><br />
+                    </div>
+
+                    <div class="col-md-4 form-group">
+                        <button class="btn pull-left" type="submit" style="color: black;"><strong>ENVIAR</strong></button>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <button class="btn pull-left" type="reset" style="color: black;"><strong>LIMPAR</strong></button>
+                    </div>
+
+                </form>
+            </div>
+    </div>
+    <br>
+
+
+
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>
